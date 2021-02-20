@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-style: "Chivo", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(116, 116, 116);
+  width: 360px;
+  height: auto;
+  margin: 10% auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 10px black;
+  padding: 10px;
+}
+
+.completed {
+  color: #d31996;
+  text-decoration: line-through;
+}
+
+#tache {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+    background : #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+  }
+  li:nth-child(2n){
+    background:rgb(116, 116, 116);
+    color: #fff;
+  }
+  span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color:white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+   
+  }
+  li:hover span{
+    width: 40px;
+    opacity: 1.0;
+  }
+
+#inpt {
+  font-family: "Overpass", sans-serif;
+  width: auto;
+  height: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-family: "Overpass", sans-serif;
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  margin: 10px;
+}
+
+#btn {
+  cursor: pointer;
+  width: auto;
+  height: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Overpass", sans-serif;
+  margin: 10px;
+  box-shadow: 0px 0px 50px -15px #000000;
+  transition: all 0.25s;
+}
+
+#btn:active {
+  background-color: #d31996;
+  color: white;
+}
+
+/*GSAP
